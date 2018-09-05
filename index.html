@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" >
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -418,34 +418,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   
-    <!-- Script to toggle on the Non-Smoking btn-group- -->
-    <script>    
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                var carouselButtonSpan = $("#carouselButton").children("span");
-                var classSwitch = function(element, before, after){
-                    element.removeClass(before);
-                    element.addClass(after);
-                }
-                var pause = 'fa-pause';
-                var play = 'fa-play';
-                if (carouselButtonSpan.hasClass(pause)) {
-                    $("#mycarousel").carousel('pause');
-                    classSwitch(carouselButtonSpan, pause, play)
-                }
-                else if (carouselButtonSpan.hasClass(play)){
-                    $("#mycarousel").carousel('cycle');
-                    classSwitch(carouselButtonSpan, play, pause)                 
-                }
-            });
-            $('#reservationModal').on('shown.bs.modal', function (event) {
-                $("#defaultButtonToggle").button("toggle");
-            });
-        });
-            
-    </script>    
+    <script src="js/scripts.js"> </script>    
     
 </body>
 
